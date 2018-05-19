@@ -1,0 +1,64 @@
+---
+---
+@charset "utf-8";
+//@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400italic,700,700italic);
+
+@import "bower/animatewithsass/animate.scss";
+@import "sass/variables";
+
+/// Bootstrap
+@import "bower/bootstrap/scss/variables";
+@import "bower/bootstrap/scss/mixins";
+
+// Reset and dependencies
+@import "bower/bootstrap/scss/normalize";
+@import "bower/bootstrap/scss/print";
+
+// Core CSS
+@import "bower/bootstrap/scss/reboot";
+@import "bower/bootstrap/scss/type";
+@import "bower/bootstrap/scss/images";
+//@import "code";
+@import "bower/bootstrap/scss/grid";
+//@import "tables";
+//@import "forms";
+//@import "buttons";
+
+// Components
+//@import "animation";
+//@import "dropdown";
+//@import "button-group";
+//@import "input-group";
+//@import "custom-forms";
+//@import "nav";
+//@import "navbar";
+//@import "card";
+//@import "breadcrumb";
+//@import "pagination";
+//@import "pager";
+//@import "labels";
+@import "bower/bootstrap/scss/jumbotron";
+//@import "alert";
+//@import "progress";
+//@import "media";
+//@import "list-group";
+//@import "responsive-embed";
+//@import "close";
+
+// Components w/ JavaScript
+//@import "modal";
+//@import "tooltip";
+//@import "popover";
+//@import "carousel";
+
+// Utility classes
+@import "bower/bootstrap/scss/utilities";
+@import "bower/bootstrap/scss/utilities-background";
+@import "bower/bootstrap/scss/utilities-spacing";
+@import "bower/bootstrap/scss/utilities-responsive";
+
+
+@import 
+        "sass/base",
+        "sass/footer"
+;

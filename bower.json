@@ -1,0 +1,16 @@
+{
+  "name": "dk.sejladsudsigt.web",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_sass/assets/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "animatewithsass": "^3.2.2",
+    "wow": "wow.js#^1.1.2"
+  }
+}

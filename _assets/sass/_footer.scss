@@ -1,0 +1,21 @@
+footer {
+    margin-top:2rem;
+    padding:2rem 0;
+    //background: $gray-dark;
+    @extend .text-xs-center;
+}
+.footer-text {
+    display: inline-block !important;
+    padding:22px 2rem 0;
+    
+    border-top:1px solid $gray-light;
+    font-size:13px;
+
+    &, & a {
+        color:$gray-light;
+    }
+
+    & a {
+        text-decoration: underline;
+    }
+}
