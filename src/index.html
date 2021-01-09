@@ -4,26 +4,163 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/style.dev.css" rel="stylesheet">
+    <link href="./css/style.dev.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- HERO -->
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                    fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+
+                <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                    <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                        aria-label="Global">
+                        <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                            <div class="flex items-center justify-between w-full md:w-auto">
+                                <a href="#">
+                                    <span class="sr-only">Sejladsudsigt til iOS og iPadOS</span>
+                                    <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/56/ee/92/56ee921c-3d96-66b2-65aa-cf16f9ac7751/AppIcon-1x_U007emarketing-0-6-0-0-85-220.png/1200x1200bb.jpg" alt="Sejladsudsigt" class="h-8 w-auto sm:h-10" style="border-top-left-radius: 22%; border-top-right-radius: 22%; border-bottom-right-radius: 22%; border-bottom-left-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;">
+                                </a>
+                                <div class="-mr-2 flex items-center md:hidden">
+                                    <button type="button"
+                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                        id="main-menu" aria-haspopup="true">
+                                        <span class="sr-only">Open main menu</span>
+                                        <!-- Heroicon name: menu -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h16M4 18h16" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Funktioner</a>
+
+                            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">FAQ</a>
+
+                            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Om appen</a>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--
+          Mobile menu, show/hide based on menu open state.
+  
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+                <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                    <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div class="px-5 pt-4 flex items-center justify-between">
+                            <div>
+                                <img class="h-8 w-auto"
+                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+                            </div>
+                            <div class="-mr-2">
+                                <button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close main menu</span>
+                                    <!-- Heroicon name: x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                            <div class="px-2 pt-2 pb-3 space-y-1" role="none">
+                                <a href="#"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                    role="menuitem">Funktioner</a>
+
+                                <a href="#"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                    role="menuitem">FAQ</a>
+
+                                <a href="#"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                    role="menuitem">Om appen</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Data to enrich your</span>
+                            <span class="block text-indigo-600 xl:inline">online business</span>
+                        </h1>
+                        <p
+                            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                            Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#"
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                                    Get started
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#"
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                                    Live demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                alt="">
+        </div>
+    </div>
+
+
+
+
+
     <!-- FEATURES -->
     <div class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Transactions</h2>
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Funktioner</h2>
                 <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    A better way to send money
+                    Vejr progniser time for time
                 </p>
                 <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-                    in accusamus quisquam.
+                    Sejladsudsigt til iOS, iPadOS levere præcise vejr prognoser time for time lige når du skal bruge
+                    dem.
                 </p>
             </div>
 
             <div class="mt-10">
                 <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+
+                    <!--- Mange prognoser -->
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -37,11 +174,11 @@
                         </div>
                         <div class="ml-4">
                             <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Competitive exchange rates
+                                Kæmpe udvalg af prognoser
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Appen indeholder alle FCOOs prognoser så som vind, strøm og bølger. Men også de lidt
+                                mere ukendte som vandstand, luft/vand temperatur, nedbør, skydække og meget mere.
                             </dd>
                         </div>
                     </div>
@@ -59,11 +196,11 @@
                         </div>
                         <div class="ml-4">
                             <dt class="text-lg leading-6 font-medium text-gray-900">
-                                No hidden fees
+                                Direkte på din iPhone og iPad.
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Sejladudsigt app er optimeret til iPhone og iPad så du altid har den nyeste prognose med
+                                dig.
                             </dd>
                         </div>
                     </div>
@@ -81,11 +218,12 @@
                         </div>
                         <div class="ml-4">
                             <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Transfers are instant
+                                Find lige dit område
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Appen indeholder prognoser for en lang række af de mest anvende områder i Danmark.
+                                *Under udvikling*: Opdatering til understøttelse af prognoser direkte på et kort (som
+                                web versionen på www.sejladsudsigt.dk)
                             </dd>
                         </div>
                     </div>
@@ -103,11 +241,11 @@
                         </div>
                         <div class="ml-4">
                             <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Mobile notifications
+                                Bestem selv
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Ud over et stort udvalg af prognoser kan du også bestemme om du vil se skydeområder og
+                                -advarsler, sejlruter, farvandsgrænser mm.
                             </dd>
                         </div>
                     </div>
@@ -116,6 +254,41 @@
         </div>
     </div>
 
+
+    <!-- DONER -->
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span class="block">Skal du have appen?</span>
+                <span class="block text-indigo-600">Download den i dag</span>
+            </h2>
+            <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
+                <!-- Download badge from Apple App Store-->
+                <a href="https://apps.apple.com/us/app/sejladsudsigt/id423398593?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/da-DK?size=250x83&amp;releaseDate=1299628800&h=6e982f36998d127fd7d96d2abdccd4be" alt="Download on the App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+
+        <img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/6e830631bb4de07409d6a0e7d086fa04/730d7ec2-974e-407f-8313-d58d8124bd8f.png">
+        <a href="https://apple.co/2Xsd2ud">Short link</a>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div>
+        Sejladsudsigt - Funktioner - FAQ - Om appen
+        Sejladsudsigt er udvikler af Jacob Møhl, med tilladelse af FCOO (Forsvarets Center for Operativ Oceanografi)
+© 2020 Jacob Møhl - Alle retigheder forbeholdes - Miljø: production
+    </div>
+
+
+    <a href="https://apps.apple.com/us/app/sejladsudsigt/id423398593?itscg=30200&amp;itsct=apps_box" style="width: 170px; height: 170px; border-top-left-radius: 22%; border-top-right-radius: 22%; border-bottom-right-radius: 22%; border-bottom-left-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;">
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/56/ee/92/56ee921c-3d96-66b2-65aa-cf16f9ac7751/AppIcon-1x_U007emarketing-0-6-0-0-85-220.png/1200x1200bb.jpg" alt="Sejladsudsigt" style="width: 170px; height: 170px; border-top-left-radius: 22%; border-top-right-radius: 22%; border-bottom-right-radius: 22%; border-bottom-left-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;">
+    </a>
 </body>
 
 </html>
