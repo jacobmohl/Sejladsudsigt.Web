@@ -1,0 +1,18 @@
+{
+  "name": "sejladsudsigt.web",
+  "version": "1.0.0",
+  "description": "Website for the iOS app Sejladsudsigt",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.0",
+    "tailwindcss": "^2.0.2",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1"
+  },
+  "scripts": {
+    "build-dev": "postcss src/css/style.css --output src/css//style.dev.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
