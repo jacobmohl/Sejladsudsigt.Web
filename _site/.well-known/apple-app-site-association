@@ -1,0 +1,20 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "D7SX733VFC.com.nyide.sejladsudsigt" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+               },
+               {
+                  "/": "/donationer",
+                  "comment": "Matches any URL whose path starts with /buy/"
+               }
+             ]
+           }
+       ]
+  }
+}
