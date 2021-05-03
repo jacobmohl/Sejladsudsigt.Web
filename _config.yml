@@ -21,6 +21,9 @@ exclude:
   - package.json
   - bower.json
   - node_modules
+
+  include:
+ - .well-known
   
 sass:
     sass_dir: _assets
